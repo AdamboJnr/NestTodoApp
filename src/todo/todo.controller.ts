@@ -8,7 +8,6 @@ export class TodoController {
 
     @Post('add')
     addTodo (@Body() dto: TodoDto ){
-        console.log({ dto })
         return this.todoService.addTodo(dto);
     }
 

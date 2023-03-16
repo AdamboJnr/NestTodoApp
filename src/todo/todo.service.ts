@@ -18,7 +18,7 @@ export class TodoService {
 
             return todo
         } catch (error) {
-            return error.code
+            return error
         }
     }
 
@@ -58,7 +58,7 @@ export class TodoService {
 
             return todos
         } catch (error) {
-            console.log(error.code)    
+            return error.code   
         }
     }
 }
