@@ -70,7 +70,7 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "main": ".eslintrc.js",
+  "main": "./src/main.ts",
   "directories": {
     "test": "test"
   }
