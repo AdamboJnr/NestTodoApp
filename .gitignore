@@ -37,3 +37,4 @@ lerna-debug.log*
 # Db
 .env
 docker-compose.yml
+.vercel
