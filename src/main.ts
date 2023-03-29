@@ -8,7 +8,9 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }))
 
   const prismaService = app.get(PrismaService);
-  await prismaService.enableShutdownHooks(app)
+  await prismaService.enableShutdownHooks(app);
+
+  app.enableCors();
 
   await app.listen(3000);
 }
